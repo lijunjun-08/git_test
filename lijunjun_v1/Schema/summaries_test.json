@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "daily_summaries": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "employee_id": {
+              "type": "integer"
+            },
+            "date": {
+              "type": "string"
+            },
+            "work": {
+              "type": "integer"
+            },
+            "rest": {
+              "type": "integer"
+            },
+            "night": {
+              "type": "integer"
+            },
+            "over": {
+              "type": "integer"
+            },
+            "night_over": {
+              "type": "integer"
+            },
+            "original_work_start": {
+              "type": "string"
+            },
+            "original_work_end": {
+              "type": "string"
+            },
+            "work_start": {
+              "type": "string"
+            },
+            "work_end": {
+              "type": "string"
+            },
+            "shift_over": {
+              "type": "integer"
+            },
+            "training": {
+              "type": "integer"
+            },
+            "late": {
+              "type": "integer"
+            },
+            "leave_early": {
+              "type": "integer"
+            },
+            "absence": {
+              "type": "integer"
+            },
+            "salary": {
+              "type": "integer"
+            },
+            "vacation_time": {
+              "type": "integer"
+            },
+            "holiday_type": {
+              "type": "integer"
+            },
+            "vacation_type": {
+              "type": "string"
+            },
+            "suspend_type": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "employee_id",
+            "date",
+            "work",
+            "rest",
+            "night",
+            "over",
+            "night_over",
+            "original_work_start",
+            "original_work_end",
+            "work_start",
+            "work_end",
+            "shift_over",
+            "training",
+            "late",
+            "leave_early",
+            "absence",
+            "salary",
+            "vacation_time",
+            "holiday_type",
+            "vacation_type",
+            "suspend_type"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "daily_summaries"
+  ]
+}

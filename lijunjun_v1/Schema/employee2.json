@@ -1,0 +1,100 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "entered_day": {
+      "type": "null"
+    },
+    "retired_day": {
+      "type": "null"
+    },
+    "main_group": {
+      "type": "integer"
+    },
+    "sub_group": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "work_kind": {
+      "type": "integer"
+    },
+    "birth_day": {
+      "type": "null"
+    },
+    "traveling_expenses": {
+      "type": "integer"
+    },
+    "hourly_wage": {
+      "type": "integer"
+    },
+    "note1": {
+      "type": "string"
+    },
+    "note2": {
+      "type": "string"
+    },
+    "note3": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "retirement": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "first_name",
+    "last_name",
+    "code",
+    "mail",
+    "tel",
+    "entered_day",
+    "retired_day",
+    "main_group",
+    "sub_group",
+    "work_kind",
+    "birth_day",
+    "traveling_expenses",
+    "hourly_wage",
+    "note1",
+    "note2",
+    "note3",
+    "tags",
+    "retirement"
+  ]
+}

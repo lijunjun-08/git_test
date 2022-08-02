@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BP>
+  <ID>1</ID>
+  <Name>勤怠工数データ連携</Name>
+  <FlowsSortOrder>1,2,3,4,5,6</FlowsSortOrder>
+  <Properties>
+    <ID>1</ID>
+    <Order>0</Order>
+    <Name>勤怠工数データ連携</Name>
+  </Properties>
+</BP>

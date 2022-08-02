@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "access_token": "aaaa",
+            "refresh_token": "bbbb",
+            "token_type": "bearer",
+            "expires_in": 3600,
+            "scope": "adits.read"
+        }
+    ],
+    "required": [
+        "access_token",
+        "refresh_token",
+        "token_type",
+        "expires_in",
+        "scope"
+    ],
+    "properties": {
+        "access_token": {
+            "$id": "#/properties/access_token",
+            "type": "string",
+            "title": "The access_token schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "aaaa"
+            ]
+        },
+        "refresh_token": {
+            "$id": "#/properties/refresh_token",
+            "type": "string",
+            "title": "The refresh_token schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "bbbb"
+            ]
+        },
+        "token_type": {
+            "$id": "#/properties/token_type",
+            "type": "string",
+            "title": "The token_type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "bearer"
+            ]
+        },
+        "expires_in": {
+            "$id": "#/properties/expires_in",
+            "type": "integer",
+            "title": "The expires_in schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                3600
+            ]
+        },
+        "scope": {
+            "$id": "#/properties/scope",
+            "type": "string",
+            "title": "The scope schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "adits.read"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

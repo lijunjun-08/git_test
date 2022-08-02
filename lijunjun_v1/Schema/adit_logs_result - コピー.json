@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "type": "object",
+    "required": [
+        "adits"
+    ],
+    "properties": {
+        "adits": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "employee_id": {
+                        "type": "integer"
+                    },
+                    "group_id": {
+                        "type": "integer"
+                    },
+                    "date": {
+                        "type": "string"
+                    },
+                    "time": {
+                        "type": "string"
+                    },
+                    "location": {
+                        "type": "string"
+                    },
+                    "work_type": {
+                        "type": "string"
+                    },
+                    "approved": {
+                        "type": "boolean"
+                    },
+                    "canceled": {
+                        "type": "boolean"
+                    },
+                    "adit_type": {
+                        "type": "string"
+                    },
+                    "adit_method": {
+                        "type": "string"
+                    },
+                    "address": {
+                        "type": "string"
+                    },
+                    "latitude": {
+                        "type": "integer"
+                    },
+                    "longitude": {
+                        "type": "integer"
+                    },
+                    "notice": {
+                        "type": "string"
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}

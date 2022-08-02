@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectData projectKey="995e71c1-d754-4827-855a-812804699949">
+  <BusinessProcess>
+    <ID>1</ID>
+    <Name>勤怠工数データ連携</Name>
+    <Flow>
+      <ID>1</ID>
+      <Name>勤怠API認証</Name>
+    </Flow>
+    <Flow>
+      <ID>2</ID>
+      <Name>勤怠APIからデータ取得</Name>
+    </Flow>
+    <Flow>
+      <ID>3</ID>
+      <Name>工数API</Name>
+    </Flow>
+    <Flow>
+      <ID>4</ID>
+      <Name>NHK＿API</Name>
+    </Flow>
+    <Flow>
+      <ID>5</ID>
+      <Name>ファイル出力</Name>
+    </Flow>
+    <Flow>
+      <ID>6</ID>
+      <Name>データ削除</Name>
+      <Step>
+        <ID>1</ID>
+        <Name>データマッパー</Name>
+      </Step>
+    </Flow>
+  </BusinessProcess>
+</ProjectData>

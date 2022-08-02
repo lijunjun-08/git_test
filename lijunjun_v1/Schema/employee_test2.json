@@ -1,0 +1,90 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [
+        "employees"
+    ],
+  "properties": {
+    "employees": {
+       "type": "array",
+       "items":{
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "mail": {
+              "type": "string"
+            },
+            "tel": {
+              "type": "string"
+            },
+            "entered_day": {
+              "type": "null"
+            },
+            "retired_day": {
+              "type": "null"
+            },
+            "main_group": {
+              "type": "string"
+            },
+            "sub_group": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "work_kind": {
+              "type": "integer"
+            },
+            "birth_day": {
+              "type": "null"
+            },
+            "traveling_expenses": {
+              "type": "integer"
+            },
+            "hourly_wage": {
+              "type": "integer"
+            },
+            "note1": {
+              "type": "string"
+            },
+            "note2": {
+              "type": "string"
+            },
+            "note3": {
+              "type": "string"
+            },
+            "tags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "retirement": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+}

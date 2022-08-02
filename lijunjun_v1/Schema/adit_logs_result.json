@@ -1,0 +1,204 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "adits"
+    ],
+    "properties": {
+        "adits": {
+            "type": "array",
+            "default": [],
+            "title": "The adits Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "employee_id",
+                    "group_id",
+                    "date",
+                    "time",
+                    "location",
+                    "work_type",
+                    "approved",
+                    "canceled",
+                    "adit_type",
+                    "adit_method",
+                    "address",
+                    "latitude",
+                    "longitude",
+                    "notice"
+                ],
+                "properties": {
+                    "employee_id": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The employee_id Schema",
+                        "examples": [
+                            4294967295
+                        ]
+                    },
+                    "group_id": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The group_id Schema",
+                        "examples": [
+                            4294967295
+                        ]
+                    },
+                    "date": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The date Schema",
+                        "examples": [
+                            "2019-08-24"
+                        ]
+                    },
+                    "time": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The time Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "location": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The location Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "work_type": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The work_type Schema",
+                        "examples": [
+                            "auto"
+                        ]
+                    },
+                    "approved": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "The approved Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "canceled": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "The canceled Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "adit_type": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The adit_type Schema",
+                        "examples": [
+                            "auto"
+                        ]
+                    },
+                    "adit_method": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The adit_method Schema",
+                        "examples": [
+                            "manager"
+                        ]
+                    },
+                    "address": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The address Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "latitude": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The latitude Schema",
+                        "examples": [
+                            -90
+                        ]
+                    },
+                    "longitude": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The longitude Schema",
+                        "examples": [
+                            -180
+                        ]
+                    },
+                    "notice": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The notice Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "employee_id": 4294967295,
+                    "group_id": 4294967295,
+                    "date": "2019-08-24",
+                    "time": "string",
+                    "location": "string",
+                    "work_type": "auto",
+                    "approved": true,
+                    "canceled": true,
+                    "adit_type": "auto",
+                    "adit_method": "manager",
+                    "address": "string",
+                    "latitude": -90,
+                    "longitude": -180,
+                    "notice": "string"
+                }]
+            },
+            "examples": [
+                [{
+                    "employee_id": 4294967295,
+                    "group_id": 4294967295,
+                    "date": "2019-08-24",
+                    "time": "string",
+                    "location": "string",
+                    "work_type": "auto",
+                    "approved": true,
+                    "canceled": true,
+                    "adit_type": "auto",
+                    "adit_method": "manager",
+                    "address": "string",
+                    "latitude": -90,
+                    "longitude": -180,
+                    "notice": "string"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "adits": [{
+            "employee_id": 4294967295,
+            "group_id": 4294967295,
+            "date": "2019-08-24",
+            "time": "string",
+            "location": "string",
+            "work_type": "auto",
+            "approved": true,
+            "canceled": true,
+            "adit_type": "auto",
+            "adit_method": "manager",
+            "address": "string",
+            "latitude": -90,
+            "longitude": -180,
+            "notice": "string"
+        }]
+    }]
+}

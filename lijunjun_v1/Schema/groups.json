@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["groups"],
+  "properties": {
+    "groups": {
+      "type": "array",
+      "items": 
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "parent_id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "code": {
+              "type": "string"
+            },
+            "time_zone": {
+              "type": "string"
+            },
+            "lang_code": {
+              "type": "string"
+            },
+            "url_type": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "parent_id",
+            "name",
+            "code",
+            "time_zone",
+            "lang_code",
+            "url_type"
+          ]
+        }
+      
+    }
+  },
+  "required": [
+    "groups"
+  ]
+}

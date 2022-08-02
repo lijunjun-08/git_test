@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "issue"
+    ],
+    "properties": {
+        "issue": {
+            "$id": "#/properties/issue",
+            "type": "object",
+            "title": "The issue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "required": [
+                "project_id",
+                "tracker_id",
+                "status_id",
+                "priority_id",
+                "assigned_to_id",
+                "subject",
+                "description"
+            ],
+            "properties": {
+                "project_id": {
+                    "$id": "#/properties/issue/properties/project_id",
+                    "type": "integer",
+                    "title": "The project_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "tracker_id": {
+                    "$id": "#/properties/issue/properties/tracker_id",
+                    "type": "integer",
+                    "title": "The tracker_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "status_id": {
+                    "$id": "#/properties/issue/properties/status_id",
+                    "type": "integer",
+                    "title": "The status_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "priority_id": {
+                    "$id": "#/properties/issue/properties/priority_id",
+                    "type": "integer",
+                    "title": "The priority_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "assigned_to_id": {
+                    "$id": "#/properties/issue/properties/assigned_to_id",
+                    "type": "integer",
+                    "title": "The assigned_to_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0
+                },
+                "subject": {
+                    "$id": "#/properties/issue/properties/subject",
+                    "type": "string",
+                    "title": "The subject schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                },
+                "description": {
+                    "$id": "#/properties/issue/properties/description",
+                    "type": "string",
+                    "title": "The description schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
